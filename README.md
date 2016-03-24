@@ -6,6 +6,10 @@ This project is designed to help those who use antd to develop a website(or web 
 
 [Ant Design](https://github.com/ant-design/ant-design)
 
+## Screenshot
+
+![Screenshot](https://github.com/yuzhouisme/react-antd-redux-router-starter/blob/master/example/example-index.png)
+
 ## Getting started
 
 1.Clone this repo.
