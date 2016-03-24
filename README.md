@@ -4,9 +4,7 @@ This project is designed to help those who use antd to develop a website(or web 
 
 [![NPM version](https://img.shields.io/npm/v/antd-init.svg?style=flat)](https://npmjs.org/package/antd-init)
 
-[Ant Design](https://github.com/ant-design/ant-design) boilerplate generator.
-
-----
+[Ant Design](https://github.com/ant-design/ant-design)
 
 ## Getting started
 
@@ -30,7 +28,37 @@ $ npm run dev
 
 ## Explanation (I think it's import to beginner)
 
+1. To know the directory structure.
 
+```
+$ tree . -L 2
+.
+├── README.md
+├── index.html
+├── node_modules
+├── package.json
+├── src
+│   ├── actions // for redux action
+│   ├── common
+│   ├── component // dumb component
+│   ├── constants // for constants
+│   ├── container // smart component
+│   ├── data
+│   ├── entry // root entrance, a lot of config in it
+│   ├── reducers // for redux reducer
+│   └── store
+├── static
+│   ├── assets
+│   ├── css
+│   ├── img
+│   └── js
+└── webpack.config.js // add config brfs
+```
+
+2. The whole entrance is index.jsx. I try to describe clearly why import that.
+
+3. Redux, read doc more and clear the connection between actions-reducers-container-component. 
+More Redux: 1. In English, http://redux.js.org 2. In Chinese, https://github.com/sorrycc/redux-in-chinese
 
 ## Install environment and test [important]
 
