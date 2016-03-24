@@ -1,10 +1,12 @@
 import React from 'react';
-import { DatePicker } from 'antd';
+import Main from '../container/Main';
 
 const App = React.createClass({
   render() {
     return (
-      <DatePicker />
+      <div>
+        { this.props.children || <Main /> }
+      </div>
     );
   },
 });

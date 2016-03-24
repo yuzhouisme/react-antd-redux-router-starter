@@ -1,18 +1,41 @@
 {
-  "name": "antd-demo",
+  "name": "react-antd-redux-router-starter-demo",
   "version": "1.0.0",
+  "description": "This project is designed to help those who use antd to develop a website(or web app). Maybe also need to use redux, router and so on.",
+  "author": "yuzhouisme",
   "entry": {
     "index": "./src/entry/index.jsx"
   },
   "dependencies": {
     "antd": "~0.12.0",
     "atool-build": "0.5.x",
+    "babel-core": "^6.5.2",
     "babel-plugin-antd": "^0.2.0",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
     "es3ify-loader": "^0.1.0",
+    "es6-promise": "^3.1.2",
+    "immutable": "^3.7.6",
+    "isomorphic-fetch": "^2.2.1",
+    "json-loader": "^0.5.4",
+    "lodash.range": "^3.1.1",
+    "npm": "^3.7.2",
+    "r-dom": "^2.1.0",
     "react": "~0.14.6",
-    "react-dom": "~0.14.6"
+    "react-dom": "~0.14.6",
+    "react-motion": "^0.4.2",
+    "react-progress-2": "^4.2.1",
+    "react-redux": "^4.4.0",
+    "react-router": "^2.0.0",
+    "react-router-redux": "^3.0.0",
+    "redux": "^3.3.1",
+    "redux-logger": "^2.5.2",
+    "redux-thunk": "^1.0.3",
+    "request": "^2.65.0",
+    "reqwest": "^2.0.5"
   },
   "devDependencies": {
+    "brfs": "^1.4.3",
     "dora": "0.2.x",
     "dora-plugin-atool-build": "0.4.x",
     "dora-plugin-hmr": "0.3.x",
@@ -20,7 +43,11 @@
     "eslint": "1.10.x",
     "eslint-config-airbnb": "4.0.x",
     "eslint-plugin-react": "3.16.x",
-    "pre-commit": "1.x"
+    "pre-commit": "1.x",
+    "redux-devtools": "^3.1.1",
+    "redux-devtools-dock-monitor": "^1.0.1",
+    "redux-devtools-log-monitor": "^1.0.4",
+    "transform-loader": "^0.2.3"
   },
   "pre-commit": [
     "lint"
@@ -29,5 +56,10 @@
     "dev": "dora -p 8001 --plugins atool-build,proxy,hmr",
     "lint": "eslint --ext .js,.jsx src",
     "build": "atool-build -o ./dist/${npm_package_family}/${npm_package_name}/${npm_package_version}"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   }
 }

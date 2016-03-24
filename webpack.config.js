@@ -1,3 +1,4 @@
+require('es6-promise').polyfill()
 module.exports = function(webpackConfig) {
   webpackConfig.module.loaders.forEach(function(loader) {
     if (loader.loader === 'babel') {
@@ -12,6 +13,10 @@ module.exports = function(webpackConfig) {
     test: /\.jsx?$/,
     loader: 'es3ify',
   });
-
+  webpackConfig.module.loaders.unshift({
+    test: /\.js$/,
+    include: /linebreak/,
+    loader: "transform?brfs"
+  });
   return webpackConfig;
 };
